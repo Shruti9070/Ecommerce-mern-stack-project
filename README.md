@@ -344,50 +344,44 @@ See `backend/.env.example` for complete template
 
 ## 🚀 Deployment
 
-### Backend (Render/Heroku)
-1. Push to GitHub
-2. Connect repository
-3. Set environment variables
-4. Deploy
+### Full Stack Deploy: Render Backend + Netlify Frontend
 
-### Render (Recommended for Backend)
-1. Go to Render and choose **New + > Blueprint**.
+#### Step 1: Deploy Backend on Render
+1. Go to Render dashboard and click **New + > Blueprint**.
 2. Connect your GitHub repo.
 3. Render will read [render.yaml](render.yaml) and create the backend service.
-4. Add the secret values for `MONGO_URI`, `JWT_SECRET`, `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`, and `FRONTEND_URL`.
-5. Deploy.
+4. Set environment variables:
+   - `MONGO_URI` = your MongoDB Atlas URI
+   - `JWT_SECRET` = your JWT secret
+   - `RAZORPAY_KEY_ID` = your Razorpay key ID
+   - `RAZORPAY_KEY_SECRET` = your Razorpay secret
+   - `FRONTEND_URL` = your Netlify frontend URL (update after frontend deploy)
+   - `NODE_ENV` = `production`
+5. Click Deploy and wait for green status
+6. Copy your backend URL (e.g., `https://privon-backend.onrender.com`)
 
-### Heroku (Single App: Frontend + Backend)
-1. Install Heroku CLI and login:
-```bash
-heroku login
-```
-2. Create app from project root:
-```bash
-heroku create your-app-name
-```
-3. Set production config vars:
-```bash
-heroku config:set MONGO_URI="your_mongodb_atlas_uri"
-heroku config:set JWT_SECRET="your_strong_jwt_secret"
-heroku config:set RAZORPAY_KEY_ID="your_razorpay_key_id"
-heroku config:set RAZORPAY_KEY_SECRET="your_razorpay_key_secret"
-heroku config:set NODE_ENV="production"
-```
-4. Deploy:
-```bash
-git push heroku main
-```
-5. Open app:
-```bash
-heroku open
-```
+#### Step 2: Deploy Frontend on Netlify
+1. Go to Netlify and click **Add new site > Import an existing project**.
+2. Connect your GitHub repo.
+3. Set build settings:
+   - Build command: `npm run build`
+   - Publish directory: `frontend/build`
+4. Add environment variable:
+   - `REACT_APP_API_URL` = your Render backend URL + `/api` (e.g., `https://privon-backend.onrender.com/api`)
+5. Click Deploy
+6. Get your Netlify URL (e.g., `https://privon-frontend.netlify.app`)
 
-### Frontend (Vercel/Netlify)
-1. Push to GitHub
-2. Connect repository
-3. Update API URL
-4. Deploy
+#### Step 3: Link Frontend URL to Backend
+1. Go back to Render backend settings.
+2. Update the `FRONTEND_URL` environment variable to your Netlify URL.
+3. Redeploy backend.
+
+#### Alternative: Heroku (Single App)
+If you prefer a single Heroku app for both frontend + backend:
+1. `heroku login`
+2. `heroku create your-app-name`
+3. `heroku config:set MONGO_URI="..." JWT_SECRET="..." RAZORPAY_KEY_ID="..." RAZORPAY_KEY_SECRET="..." NODE_ENV="production"`
+4. `git push heroku main`
 
 See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed deployment instructions.
 
