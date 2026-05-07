@@ -350,6 +350,13 @@ See `backend/.env.example` for complete template
 3. Set environment variables
 4. Deploy
 
+### Render (Recommended for Backend)
+1. Go to Render and choose **New + > Blueprint**.
+2. Connect your GitHub repo.
+3. Render will read [render.yaml](render.yaml) and create the backend service.
+4. Add the secret values for `MONGO_URI`, `JWT_SECRET`, `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`, and `FRONTEND_URL`.
+5. Deploy.
+
 ### Heroku (Single App: Frontend + Backend)
 1. Install Heroku CLI and login:
 ```bash
