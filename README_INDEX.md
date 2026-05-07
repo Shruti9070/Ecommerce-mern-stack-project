@@ -1,8 +1,8 @@
-# 📑 FakeFlipkart - Documentation Index
+# 📑 Privon - Documentation Index
 
 ## Welcome! 👋
 
-This document helps you navigate all the documentation for the FakeFlipkart MERN eCommerce platform.
+This document helps you navigate all the documentation for the Privon MERN eCommerce platform.
 
 ---
 

@@ -3,7 +3,7 @@
 ║                                                                              ║
 ║                    🎖️  PROJECT COMPLETION CERTIFICATE  🎖️                  ║
 ║                                                                              ║
-║                         FakeFlipkart MERN eCommerce                          ║
+║                         Privon MERN eCommerce                          ║
 ║                                                                              ║
 ║                            100% COMPLETE ✅                                 ║
 ║                                                                              ║
@@ -13,7 +13,7 @@
 PROJECT SUMMARY
 ═══════════════════════════════════════════════════════════════════════════════
 
-Project Name:       FakeFlipkart - Complete MERN eCommerce Platform
+Project Name:       Privon - Complete MERN eCommerce Platform
 Completion Date:    2024
 Status:             ✅ COMPLETE & PRODUCTION READY
 Version:            1.0.0
@@ -456,7 +456,7 @@ Overall:
 CERTIFICATE OF COMPLETION
 ═══════════════════════════════════════════════════════════════════════════════
 
-This certifies that the FakeFlipkart MERN eCommerce Platform has been:
+This certifies that the Privon MERN eCommerce Platform has been:
 
   ✅ Fully Designed
   ✅ Completely Implemented
@@ -492,7 +492,7 @@ License: Open Source
 
 ═══════════════════════════════════════════════════════════════════════════════
                           Project Completion
-                    FakeFlipkart MERN eCommerce
+                    Privon MERN eCommerce
                          Version 1.0.0
 ═══════════════════════════════════════════════════════════════════════════════
 ```

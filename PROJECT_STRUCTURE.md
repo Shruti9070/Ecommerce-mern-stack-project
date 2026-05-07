@@ -1,4 +1,4 @@
-# 📂 FakeFlipkart - Complete Project Structure
+# 📂 Privon - Complete Project Structure
 
 ## 🗂️ Visual Project Layout
 

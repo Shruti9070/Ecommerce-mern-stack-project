@@ -125,7 +125,7 @@ function Signup() {
         <div className="auth-right">
           <form onSubmit={signup}>
             <h2>Create Account</h2>
-            <p className="auth-subtitle">Join FakeFlipkart today</p>
+            <p className="auth-subtitle">Join Privon today</p>
 
             {error && <div className="error-message">{error}</div>}
             {success && <div className="success-message">{success}</div>}

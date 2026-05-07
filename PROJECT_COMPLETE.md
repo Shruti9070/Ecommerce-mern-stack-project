@@ -1,8 +1,8 @@
-# 🎉 FakeFlipkart - Project Complete!
+# 🎉 Privon - Project Complete!
 
 ## Overview
 
-This is a **fully functional MERN stack eCommerce website** built similar to Flipkart with all essential features for an online shopping platform.
+This is a **fully functional MERN stack eCommerce website** built similar to Privon with all essential features for an online shopping platform.
 
 ---
 
@@ -41,7 +41,7 @@ All requested features have been successfully implemented, tested, and documente
 - ✅ Footer component
 
 ### Styling
-- ✅ Flipkart-inspired design
+- ✅ Privon-inspired design
 - ✅ Responsive layout (Mobile, Tablet, Desktop)
 - ✅ Gradient backgrounds (Blue & Orange)
 - ✅ Dark mode support
@@ -181,7 +181,7 @@ Runs on: `http://localhost:3000`
 - Loading states
 - Error handling
 - User-friendly UI
-- Flipkart-style colors and design
+- Privon-style colors and design
 
 ---
 
@@ -376,7 +376,7 @@ POST   /api/payments/verify-payment
 
 ## 🎨 Design Features
 
-- **Color Scheme**: Blue (#2874f0) & Orange (#fb641b) - Flipkart inspired
+- **Color Scheme**: Blue (#2874f0) & Orange (#fb641b) - Privon inspired
 - **Typography**: Segoe UI, system fonts
 - **Spacing**: Consistent padding and margins
 - **Shadows**: Subtle box shadows for depth

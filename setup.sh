@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# FakeFlipkart - Automated Setup Script
+# Privon - Automated Setup Script
 
-echo "🚀 Setting up FakeFlipkart MERN eCommerce..."
+echo "🚀 Setting up Privon MERN eCommerce..."
 echo ""
 
 # Backend Setup

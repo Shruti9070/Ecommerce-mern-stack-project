@@ -15,7 +15,7 @@
 
 ```
 ┌─────────────────────────────────────────┐
-│    ✅ FakeFlipkart - 100% COMPLETE     │
+│    ✅ Privon - 100% COMPLETE     │
 │                                         │
 │  Backend:        ✅ Done               │
 │  Frontend:       ✅ Done               │
@@ -284,7 +284,7 @@ Total
 
 ```
 🎨 Design
-   - Flipkart-inspired colors (Blue & Orange)
+   - Privon-inspired colors (Blue & Orange)
    - Modern, clean UI
    - Responsive layouts
    - Dark mode support
@@ -377,7 +377,7 @@ Hosting Ready
 
 You now have a **production-ready eCommerce platform** that:
 
-✨ Works like Flipkart  
+✨ Works like Privon  
 🔐 Has real authentication  
 💰 Processes real payments  
 📱 Works on all devices  

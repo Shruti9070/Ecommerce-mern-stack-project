@@ -341,7 +341,7 @@ Backend API: http://localhost:5000
 
 ## 🎨 Design Quality
 
-- ✅ Flipkart-inspired colors
+- ✅ Privon-inspired colors
 - ✅ Modern UI
 - ✅ Consistent styling
 - ✅ Smooth animations

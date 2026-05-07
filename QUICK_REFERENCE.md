@@ -1,4 +1,4 @@
-# 🚀 FakeFlipkart - Quick Reference Card
+# 🚀 Privon - Quick Reference Card
 
 ## ⚡ Quick Start (60 seconds)
 

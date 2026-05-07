@@ -1,5 +1,5 @@
 /**
- * FakeFlipkart - Database Seed File
+ * Privon - Database Seed File
  * 
  * This file contains sample data for products, users, and initial setup.
  * Run this file ONCE during initial setup to populate the database with demo data.

@@ -1,6 +1,6 @@
-# FakeFlipkart - Windows Setup Script
+# Privon - Windows Setup Script
 
-Write-Host "🚀 Setting up FakeFlipkart MERN eCommerce..." -ForegroundColor Cyan
+Write-Host "🚀 Setting up Privon MERN eCommerce..." -ForegroundColor Cyan
 Write-Host ""
 
 # Backend Setup

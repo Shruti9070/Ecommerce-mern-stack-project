@@ -3,7 +3,7 @@
 ```
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║                                                                            ║
-║          🎉 FakeFlipkart - Complete MERN eCommerce Platform 🎉           ║
+║          🎉 Privon - Complete MERN eCommerce Platform 🎉           ║
 ║                                                                            ║
 ║                   EVERYTHING YOU NEED TO GET STARTED                       ║
 ║                                                                            ║

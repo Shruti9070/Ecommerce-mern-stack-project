@@ -1,6 +1,6 @@
-# FakeFlipkart - Complete MERN eCommerce Platform
+# Privon - Complete MERN eCommerce Platform
 
-> A fully functional eCommerce website built with React, Node.js, and MongoDB - similar to Flipkart with all essential features.
+> A fully functional eCommerce website built with React, Node.js, and MongoDB - similar to Privon with all essential features.
 
 [![Status](https://img.shields.io/badge/Status-Complete-success?style=flat-square)]()
 [![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?style=flat-square)]()
@@ -87,7 +87,7 @@ cd frontend && npm install && npm start
 ### 🎨 User Experience
 - Dark mode toggle
 - Responsive design (Mobile/Tablet/Desktop)
-- Flipkart-inspired UI
+- Privon-inspired UI
 - Smooth animations
 - Loading states
 
@@ -304,7 +304,7 @@ POST   /api/payments/verify-payment
 
 ## 🎨 Design Details
 
-- **Colors:** Blue (#2874f0) & Orange (#fb641b) - Flipkart inspired
+- **Colors:** Blue (#2874f0) & Orange (#fb641b) - Privon inspired
 - **Font:** Segoe UI, system fonts
 - **Layout:** CSS Grid + Flexbox
 - **Animations:** Smooth transitions

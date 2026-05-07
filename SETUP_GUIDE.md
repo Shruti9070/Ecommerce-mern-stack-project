@@ -1,6 +1,6 @@
-# 🛍️ FakeFlipkart - Complete MERN eCommerce Website
+# 🛍️ Privon - Complete MERN eCommerce Website
 
-A full-featured eCommerce platform built with **React**, **Node.js/Express**, and **MongoDB**, similar to Flipkart with authentication, product management, cart system, orders, and payment integration.
+A full-featured eCommerce platform built with **React**, **Node.js/Express**, and **MongoDB**, similar to Privon with authentication, product management, cart system, orders, and payment integration.
 
 ## ✨ Features Implemented
 
@@ -57,7 +57,7 @@ A full-featured eCommerce platform built with **React**, **Node.js/Express**, an
 - Order status updates
 - Role-based protection
 
-### ✅ 9. UI Design (Flipkart Style)
+### ✅ 9. UI Design (Privon Style)
 - Navbar with search and categories
 - Banner section on homepage
 - Product grid layout with hover effects
@@ -297,7 +297,7 @@ Use: success@razorpay
 
 ## 🎨 Styling Features
 
-- **Flipkart Color Scheme**: Blue (#2874f0) & Orange (#fb641b)
+- **Privon Color Scheme**: Blue (#2874f0) & Orange (#fb641b)
 - **Responsive Design**: Mobile, Tablet, Desktop
 - **Dark Mode**: Toggle with moon icon
 - **Smooth Animations**: Hover effects, transitions
