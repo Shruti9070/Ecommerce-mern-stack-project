@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 require("dotenv").config();
 
 const app = express();
@@ -29,6 +30,18 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/admin", adminRoutes);
+
+if (process.env.NODE_ENV === "production") {
+  const frontendBuildPath = path.resolve(__dirname, "..", "frontend", "build");
+  app.use(express.static(frontendBuildPath));
+
+  app.get("*", (req, res) => {
+    if (!req.path.startsWith("/api")) {
+      return res.sendFile(path.join(frontendBuildPath, "index.html"));
+    }
+    return res.status(404).json({ message: "API route not found" });
+  });
+}
 
 // DB
 mongoose

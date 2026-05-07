@@ -1,4 +1,4 @@
-# 🛒 FakeFlipkart - Complete MERN eCommerce Platform
+# FakeFlipkart - Complete MERN eCommerce Platform
 
 > A fully functional eCommerce website built with React, Node.js, and MongoDB - similar to Flipkart with all essential features.
 
@@ -349,6 +349,32 @@ See `backend/.env.example` for complete template
 2. Connect repository
 3. Set environment variables
 4. Deploy
+
+### Heroku (Single App: Frontend + Backend)
+1. Install Heroku CLI and login:
+```bash
+heroku login
+```
+2. Create app from project root:
+```bash
+heroku create your-app-name
+```
+3. Set production config vars:
+```bash
+heroku config:set MONGO_URI="your_mongodb_atlas_uri"
+heroku config:set JWT_SECRET="your_strong_jwt_secret"
+heroku config:set RAZORPAY_KEY_ID="your_razorpay_key_id"
+heroku config:set RAZORPAY_KEY_SECRET="your_razorpay_key_secret"
+heroku config:set NODE_ENV="production"
+```
+4. Deploy:
+```bash
+git push heroku main
+```
+5. Open app:
+```bash
+heroku open
+```
 
 ### Frontend (Vercel/Netlify)
 1. Push to GitHub
