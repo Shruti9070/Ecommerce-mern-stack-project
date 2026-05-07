@@ -1,0 +1,13 @@
+{
+  "name": "Privon-mern",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix backend",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm start --prefix backend"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

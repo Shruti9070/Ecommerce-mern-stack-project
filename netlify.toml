@@ -1,0 +1,13 @@
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = "build"
+
+[build.environment]
+  REACT_APP_API_URL = "https://privon-backend.onrender.com/api"
+  DISABLE_ESLINT_PLUGIN = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
