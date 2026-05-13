@@ -32,6 +32,12 @@ app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/blogs", blogRoutes);
+console.log("✅ Blog routes loaded at /api/blogs");
+
+// TEST ROUTE - REMOVE AFTER TESTING
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Test route working!", timestamp: new Date().toISOString() });
+});
 
 if (process.env.NODE_ENV === "production") {
   const frontendBuildPath = path.resolve(__dirname, "..", "frontend", "build");
