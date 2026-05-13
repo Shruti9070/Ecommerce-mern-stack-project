@@ -23,13 +23,20 @@ const orderRoutes = require("./routes/orderRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const adminRoutes = require("./routes/adminRoutes");
-const blogRoutes = require("./routes/blogRoutes"); // Blog routes for n8n AI content publishing
-
-// Verify blog routes loaded
-if (!blogRoutes) {
-  console.error("❌ ERROR: blogRoutes failed to load!");
-} else {
-  console.log("✅ Blog routes loaded successfully");
+let blogRoutes;
+try {
+  blogRoutes = require("./routes/blogRoutes"); // Blog routes for n8n AI content publishing
+  console.log("✅ Blog routes required successfully:", typeof blogRoutes);
+  
+  // Verify blog routes loaded
+  if (!blogRoutes) {
+    console.error("❌ ERROR: blogRoutes is null/undefined!");
+  } else {
+    console.log("✅ Blog routes object exists");
+  }
+} catch (error) {
+  console.error("❌ ERROR loading blog routes:", error.message);
+  console.error("Stack:", error.stack);
 }
 
 app.use("/api/products", productRoutes);
@@ -38,7 +45,12 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/admin", adminRoutes);
-app.use("/api/blogs", blogRoutes);
+if (blogRoutes) {
+  app.use("/api/blogs", blogRoutes);
+  console.log("✅ Blog routes mounted at /api/blogs");
+} else {
+  console.error("❌ Cannot mount blog routes - blogRoutes is not loaded");
+}
 console.log("✅ Blog routes loaded at /api/blogs");
 
 // TEST ROUTE - REMOVE AFTER TESTING
