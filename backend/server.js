@@ -25,6 +25,13 @@ const paymentRoutes = require("./routes/paymentRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const blogRoutes = require("./routes/blogRoutes"); // Blog routes for n8n AI content publishing
 
+// Verify blog routes loaded
+if (!blogRoutes) {
+  console.error("❌ ERROR: blogRoutes failed to load!");
+} else {
+  console.log("✅ Blog routes loaded successfully");
+}
+
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/orders", orderRoutes);
