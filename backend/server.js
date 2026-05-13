@@ -23,7 +23,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const adminRoutes = require("./routes/adminRoutes");
-const blogRoutes = require("./routes/blogRoutes");
+const blogRoutes = require("./routes/blogRoutes"); // Blog routes for n8n AI content publishing
 
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
