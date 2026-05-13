@@ -77,6 +77,10 @@ function Navbar() {
 
         {/* Navigation Links */}
         <div className="navbar-links">
+          <a href="/blog" className="nav-link">
+            📝 Blog
+          </a>
+
           <a href="/about" className="nav-link">
             ℹ️ About
           </a>

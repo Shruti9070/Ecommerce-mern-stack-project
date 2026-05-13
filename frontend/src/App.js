@@ -18,6 +18,7 @@ import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import Profile from "./Profile";
 import Addresses from "./Addresses";
+import Blog from "./Blog";
 
 import "./App.css";
 
@@ -52,6 +53,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/blog" element={<Blog />} />
 
         {/* Protected Routes */}
         <Route

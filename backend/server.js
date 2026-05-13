@@ -23,6 +23,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const adminRoutes = require("./routes/adminRoutes");
+const blogRoutes = require("./routes/blogRoutes");
 
 app.use("/api/products", productRoutes);
 app.use("/api/users", userRoutes);
@@ -30,6 +31,7 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/wishlist", wishlistRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/blogs", blogRoutes);
 
 if (process.env.NODE_ENV === "production") {
   const frontendBuildPath = path.resolve(__dirname, "..", "frontend", "build");
